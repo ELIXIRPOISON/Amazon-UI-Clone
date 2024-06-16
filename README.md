@@ -9,27 +9,101 @@ The use of flexbox and grid layouts allows for flexible and responsive design.
 
 The project is hosted on GitHub Pages. [Live Demo](https://elixirpoison.github.io/Amazon-UI-Clone/WT5Amazon)
 
-## Screenshots
+## Screenshots and Explanations
 
 ### Header
+
 ![Header](screenshots/header.png)
-- **CSS Properties Used:** `background-color`, `height`, `display`, `align-items`, `justify-content`, `color`, `max-width`, `margin`, `cursor`
+
+- **HTML Tags Used:**
+  - `<header>`: Defines the header section.
+  - `<nav>`: Contains the navigation bar.
+  - `<div>`: Used for various containers such as the logo, address, search bar, sign-in, returns, and cart.
+  - `<a>`: Used for links.
+  - `<img>`: Displays the logo.
+  - `<span>`: Contains icons.
+  - `<input>`: Search input field.
+  - `<select>`: Dropdown menu for search categories.
+
+- **CSS Properties Applied:**
+  - `header { width: 100%; background-color: #0f1111; }`
+  - `.navbar { height: 60px; display: flex; align-items: center; justify-content: space-between; color: #fff; max-width: 1280px; margin: 0 auto; }`
+  - `.nav-logo img { margin-top: 10px; width: 128px; }`
+  - `.address .deliver { margin-left: 20px; font-size: 0.75rem; color: #ccc; }`
+  - `.nav-search { display: flex; justify-content: space-evenly; max-width: 620px; width: 100%; height: 40px; border-radius: 4px; }`
+  - `.select-search { background: #f3f3f3; width: 50px; text-align: center; border-top-left-radius: 4px; border-bottom-left-radius: 4px; border: none; }`
+  - `.search-input { max-width: 600px; width: 100%; font-size: 1rem; border: none; outline: none; padding-left: 10px; }`
+  - `.search-icon { max-width: 45px; width: 100%; display: flex; justify-content: center; align-items: center; font-size: 1.2rem; background: #febd68; color: #000; cursor: pointer; border-top-right-radius: 4px; border-bottom-right-radius: 4px; }`
+  - `.cart { display: flex; }`
+  - `.cart .cart-icon { font-size: 2.5rem; }`
 
 ### Banner
+
 ![Banner](screenshots/banner.png)
-- **CSS Properties Used:** `padding`, `background-color`, `color`, `font-size`, `margin`, `display`, `align-items`, `justify-content`, `gap`
+
+- **HTML Tags Used:**
+  - `<div>`: Container for the banner and its content.
+  - `<ul>`: Unordered list for navigation links.
+  - `<li>`: List items.
+  - `<a>`: Links to various sections.
+
+- **CSS Properties Applied:**
+  - `.banner { padding: 10px 20px; background: #222f3d; color: #fff; font-size: 0.875rem; }`
+  - `.banner-content { margin: 0 auto; max-width: 1280px; display: flex; align-items: center; justify-content: space-between; }`
+  - `.panel { max-width: 1280px; display: flex; align-items: center; gap: 5px; cursor: pointer; }`
+  - `.links { display: flex; align-items: center; list-style: none; gap: 15px; flex-grow: 1; margin-left: 15px; }`
+  - `.deals a { font-size: 0.9rem; font-weight: 500; white-space: nowrap; }`
 
 ### Hero Section
+
 ![Hero Section](screenshots/hero-section.png)
-- **CSS Properties Used:** `height`, `background-image`, `background-position`, `background-size`
+
+- **HTML Tags Used:**
+  - `<section>`: Defines the hero section.
+
+- **CSS Properties Applied:**
+  - `.hero-section { height: 400px; background-image: url("https://priyanshu-240499.github.io/Assignments-CSS/Weekly%20Test%20for%20CSS%20(Week-3)/images/hero-img.jpg"); background-position: center; background-size: cover; }`
 
 ### Shop Section
+
 ![Shop Section](screenshots/shop-section.png)
-- **CSS Properties Used:** `display`, `align-items`, `flex-direction`, `background-color`, `padding`, `grid-template-columns`, `gap`, `max-width`, `overflow`, `transform`, `transition`
+
+- **HTML Tags Used:**
+  - `<section>`: Defines the shop section.
+  - `<div>`: Containers for shop items.
+  - `<h3>`: Headings for shop categories.
+  - `<img>`: Images of shop items.
+  - `<a>`: Links for shop items.
+
+- **CSS Properties Applied:**
+  - `.shop-section { display: flex; align-items: center; flex-direction: column; background-color: #f3f3f3; padding: 50px 0; }`
+  - `.shop-images { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; max-width: 1280px; width: 100%; overflow: hidden; }`
+  - `.shop-link { background-color: #fff; padding: 30px; display: flex; cursor: pointer; flex-direction: column; white-space: nowrap; transform: scale(1); transition: transform 0.7s ease-in-out; }`
+  - `.shop-link:hover { transform: scale(1.1); }`
+  - `.shop-link img { width: 100%; height: 280px; object-fit: cover; margin-bottom: 10px; }`
+  - `.shop-link h3 { margin-bottom: 10px; }`
+  - `.shop-link a { display: inline-block; margin-top: 10px; font-size: 0.9rem; color: blue; font-weight: 500; transition: color 0.3s ease; }`
+  - `.shop-link:hover a { color: #c7511f; text-decoration: underline; }`
 
 ### Footer
+
 ![Footer](screenshots/footer.png)
-- **CSS Properties Used:** `background-color`, `color`, `font-size`, `font-weight`, `display`, `justify-content`, `width`, `margin`, `list-style`, `text-decoration`, `hover`
+
+- **HTML Tags Used:**
+  - `<footer>`: Defines the footer section.
+  - `<div>`: Containers for footer items.
+  - `<ul>`: Lists for footer links.
+  - `<li>`: List items.
+  - `<a>`: Links to various pages.
+
+- **CSS Properties Applied:**
+  - `.footer-title { display: flex; align-items: center; justify-content: center; background-color: #37475a; color: #fff; font-size: 0.875rem; font-weight: 600; height: 60px; }`
+  - `.footer-items { display: flex; justify-content: space-evenly; width: 100%; margin: 0 auto; background: #232f3e; }`
+  - `.footer-items h3 { font-size: 1rem; font-weight: 500; color: #fff; margin: 20px 0 10px 0; }`
+  - `.footer-items ul { list-style: none; margin-bottom: 20px; }`
+  - `.footer-items li a { color: #ddd; font-size: 0.875rem; }`
+  - `.footer-items li a:hover { text-decoration: underline; }`
+
 
 ## HTML Structure
 
